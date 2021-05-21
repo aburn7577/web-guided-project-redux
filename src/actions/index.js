@@ -1,9 +1,9 @@
 // create actions
 // action type
-export const UPDATE_TITLE = 'UPDATE_TITLE'
+export const UPDATE_TITLE = 'UPDATE_TITLE' //10
 export const TOGGLE_EDITING = 'TOGGLE_EDITING'
 
-// action creater
+// action creater //11
 export const updateTitle = newTitle => {
     // action
     return {

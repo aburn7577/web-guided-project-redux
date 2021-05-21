@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux' //1
 
 import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
-import { titleReducer } from './reducers/titleReducer';
+import { titleReducer } from './reducers/titleReducer';//2
 
 
-const store = createStore(titleReducer)
+const store = createStore(titleReducer)//3
 
 function App() {
   return (
@@ -21,4 +21,4 @@ function App() {
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<Provider store={store}><App /></Provider>, rootElement);
+ReactDOM.render(<Provider store={store}><App /></Provider>, rootElement);//4
