@@ -18,26 +18,27 @@ const Title = () => {
           <i
             className="far fa-edit"
             onClick={() => dispatch({ type: 'TOGGLE_EDITING' })}
-          />
+          ><button>edit</button> </i>
+
         </h1>
       ) : (
-        <div>
-          <input
-            className="title-input"
-            type="text"
-            name="newTitleText"
-            value={newTitleText}
-            onChange={handleChanges}
-          />
-          <button
-            onClick={() =>
-              dispatch({ type: 'UPDATE_TITLE', payload: newTitleText })
-            }
-          >
-            Update title
+          <div>
+            <input
+              className="title-input"
+              type="text"
+              name="newTitleText"
+              value={newTitleText}
+              onChange={handleChanges}
+            />
+            <button
+              onClick={() =>
+                dispatch({ type: 'UPDATE_TITLE', payload: newTitleText })
+              }
+            >
+              Update title
           </button>
-        </div>
-      )}
+          </div>
+        )}
     </div>
   );
 };
