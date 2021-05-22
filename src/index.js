@@ -6,10 +6,11 @@ import { Provider } from 'react-redux' //1
 import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
-import { titleReducer } from './reducers/titleReducer';//2
+//import { titleReducer } from './reducers/titleReducer';//2
+import reducer from './reducers'
 
 
-const store = createStore(titleReducer)//3
+const store = createStore(reducer)//3
 
 function App() {
   return (

@@ -53,8 +53,8 @@ const Title = (props) => {
 //6
 const mapStateToProps = state => { // passing state it knows about
   return {// give us a prop called aditing and send that to us when state.editing is changed
-    editing: state.editing, // when there change to state.editing pass that change as a prop to editing
-    title: state.title //properties we want passed to component (change state.title or editing to props.title or editing)
+    editing: state.title.editing, // when there change to state.editing pass that change as a prop to editing
+    title: state.title.title //properties we want passed to component (change state.title or editing to props.title or editing)
   }
 }
 
